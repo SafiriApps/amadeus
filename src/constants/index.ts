@@ -1,6 +1,6 @@
 export const HOSTS = {
-  test: "test.api.amadeus.com",
-  production: "api.amadeus.com",
+  test: "test.travel.api.amadeus.com",
+  production: "travel.api.amadeus.com",
 } as const;
 
 export const RECOGNIZED_OPTIONS = [
