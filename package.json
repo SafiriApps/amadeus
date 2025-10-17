@@ -26,7 +26,7 @@
     "flights",
     "sdk"
   ],
-  "author": "darseen",
+  "author": "darseen, safiri",
   "homepage": "https://developers.amadeus.com",
   "repository": {
     "url": "https://github.com/darseen/amadeus-ts"
