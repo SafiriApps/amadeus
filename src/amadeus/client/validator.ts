@@ -47,10 +47,12 @@ export default class Validator {
   }
 
   private static initializeHost(client: Client, options: Options): void {
+    const defaultHostname: keyof typeof HOSTS =
+      process.env.NODE_ENV === "test" ? "test" : "production";
     const hostname = this.initOptional(
       "hostname",
       options,
-      "test"
+      defaultHostname
     ) as keyof typeof HOSTS;
     client.host = this.initOptional("host", options, HOSTS[hostname]) as string;
     client.port = this.initOptional("port", options, 443) as number;

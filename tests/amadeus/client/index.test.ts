@@ -39,7 +39,7 @@ describe("Client", () => {
       expect(client.clientId).toBe("123");
       expect(client.clientSecret).toBe("234");
       expect(client.logger).toBe(console);
-      expect(client.host).toBe("test.api.amadeus.com");
+      expect(client.host).toBe("test.travel.api.amadeus.com");
       expect(client.customAppId).toBeUndefined();
       expect(client.customAppVersion).toBeUndefined();
       expect(client.http).toBe(https);
@@ -70,7 +70,7 @@ describe("Client", () => {
         hostname: "test" as Hostname,
       };
       const client = new Client(options);
-      expect(client.host).toBe("test.api.amadeus.com");
+      expect(client.host).toBe("test.travel.api.amadeus.com");
     });
 
     it("should allow for setting a custom App ID and Version", () => {

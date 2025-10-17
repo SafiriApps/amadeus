@@ -3,7 +3,7 @@ import Request from "../../../src/amadeus/client/request";
 import { Verb } from "../../../src/types/amadeus/client";
 import { ListHTTPOverride } from "../../../src/constants";
 
-const host = "test.api.amadeus.com";
+const host = "test.travel.api.amadeus.com";
 const port = 443;
 const verb: Verb = "GET";
 const ssl = true;
@@ -166,7 +166,7 @@ describe("Request", () => {
       it("should combine the options object for making an API call", () => {
         expect(request.options()).toEqual({
           method: verb,
-          host: "test.api.amadeus.com",
+          host: "test.travel.api.amadeus.com",
           port: 443,
           path: "/foo/bar?foo=bar",
           protocol: "https:",

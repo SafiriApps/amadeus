@@ -8,6 +8,7 @@ type Hosts = typeof HOSTS.test | typeof HOSTS.production;
 export type Fallback =
   | "silent"
   | "test"
+  | "production"
   | Hosts
   | number
   | boolean
